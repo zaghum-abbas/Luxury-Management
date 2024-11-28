@@ -233,7 +233,7 @@ header.sticky {
     .logo {
         max-width: 148px;
     }
-    .container-xxl {
+    .container-xl {
         --bs-gutter-x: 3rem;
     }
     header {
@@ -307,6 +307,10 @@ header.sticky {
     .mobile-transparent, .mobile-padding {
         padding-top: 0;
     }
+    .mobile-padding .container-xl {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .content-mobile-col {
         padding: 0;
     }
@@ -315,8 +319,7 @@ header.sticky {
         background-image: url(../images/about-mobile-bg.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 150px 40px 100px 40px;
-        height: 700px;
+        padding: 150px 40px 60px 40px;
         background-position-x: left;
         z-index: 1; /* Set stacking context */
         overflow: hidden; /* Contain pseudo-element */
