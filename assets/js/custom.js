@@ -32,3 +32,5 @@ function handleMobileView() {
 }
 // window.addEventListener("resize", handleMobileView);
 window.addEventListener("load", handleMobileView);
+
+

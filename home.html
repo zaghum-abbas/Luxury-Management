@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>الشروط و الاحكام</title>
+    <link href="./assets/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.css"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------- Being Header ---------->
+    <header id="header">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between align-items-center">
+          <img
+            src="./assets/images/logo.svg"
+            class="img-fluid logo"
+            alt="logo"
+          />
+
+          <ul class="nav-list" id="toggle-menu">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="javascript: void (0)">المشاريع</a></li>
+            <li><a href="javascript: void (0)">الخدمات</a></li>
+            <li><a href="about.html">عن الشركة</a></li>
+            <li><a href="javascript: void (0)">تواصل معنا</a></li>
+          </ul>
+
+          <a
+            href="javascript: void (0)"
+            class="btn btn-header d-lg-block d-none mx-lg-0 mx-3"
+            id="interest-button"
+            >سجل اهتمامك</a
+          >
+
+          <div id="call-menu" class="d-lg-none d-block">
+            <span
+              ><img
+                src="./assets/images/menu.svg"
+                alt=""
+                class="menu-icon open image-nav"
+            /></span>
+            <span
+              ><img
+                src="./assets/images/cross.svg"
+                alt=""
+                class="menu-icon close image-nav"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------- End Header ---------->
+
+    <!---------- Being Hero ---------->
+
+    <div class="swiper heroSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-bg">
+            <div class="container">
+              <div class="col-6">
+                <h1 class="hero-heading">
+                  <span class="d-lg-block">تجربة فاخرةو</span> استثمار مستدام
+                </h1>
+                <a href="" class="btn btn-header text-nowrap"
+                  >تعرف على المشاريع
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-bg">
+            <div class="container-xl">
+              <div class="col-6">
+                <h1 class="hero-heading">
+                  <span class="d-lg-block">تجربة فاخرةو</span> استثمار مستدام
+                </h1>
+                <a href="" class="btn btn-header text-nowrap"
+                  >تعرف على المشاريع
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-bg">
+            <div class="container">
+              <div class="col-6">
+                <h1 class="hero-heading">
+                  <span class="d-lg-block">تجربة فاخرة </span> واستثمار مستدام
+                </h1>
+                <a href="" class="btn btn-header">تعرف على المشاريع </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!---------- End Hero ---------->
+
+    <!---------- Being Projects ---------->
+    <section class="section-spacing bg-black pb-0">
+      <div class="container-xl">
+        <div class="row align-items-center mb-lg-5">
+          <div class="col-lg-6">
+            <h2 class="heading text-white">المشاريع</h2>
+            <p class="text_light">تصفح مشاريعنا الجديدة</p>
+          </div>
+          <div class="col-lg-6 text-end">
+            <ul
+              class="nav nav-pills justify-content-lg-end flex-nowrap mb-lg-0 mb-4"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn-outline-custom text-nowrap active me-2"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  حي الياسمين
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn-outline-custom text-nowrap me-2"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  حي الصحافة
+                </button>
+              </li>
+              <div class="dropdown me-2">
+                <a
+                  class="btn-outline-custom d-block dropdown-toggle text-decoration-none position-relative"
+                  href="javascript: void (0)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  المزيد
+                </a>
+
+                <ul class="dropdown-menu position-absolute">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                      >حي الياسمين
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                      >حي الصحافة
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row" id="project-cards-container"></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="project-card">
+                    <div class="position-relative">
+                      <img
+                        src="./assets/images/project.png"
+                        class="card-img-top"
+                        alt="project"
+                      />
+                      <span class="badge green">متاح</span>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">تلال الندى</h5>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="d-flex align-items-center option-list">
+                          <span>
+                            <img
+                              src="./assets/images/icons/location-white.svg"
+                              class="white-icon"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/icons/location-black.svg"
+                              class="black-icon"
+                              alt=""
+                            />
+                          </span>
+                          <span class="text">حي الورود، الرياض</span>
+                        </div>
+
+                        <div class="d-flex align-items-center option-list">
+                          <span>
+                            <img
+                              src="./assets/images/icons/arrow-white.svg"
+                              class="white-icon"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/icons/arrow-black.svg"
+                              class="black-icon"
+                              alt=""
+                            />
+                          </span>
+                          <span class="text">150 متر</span>
+                        </div>
+
+                        <div class="d-flex align-items-center option-list">
+                          <span>
+                            <img
+                              src="./assets/images/icons/house-white.svg"
+                              class="white-icon"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/icons/house-black.svg"
+                              class="black-icon"
+                              alt=""
+                            />
+                          </span>
+                          <span class="text">27 وحدة</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="card-text">1,000,000 ر.س</p>
+                        <a href="#" class="project-btn">ملف المشروع</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-container mt-4" id="map" style="height: 450px;"></div>
+        </div>
+      </div>
+    </section>
+    <!---------- End Projects ---------->
+    <!---------- Being Divider ---------->
+    <div class="bg-black py-2 d-lg-block d-none">
+      <div class="bg-section"></div>
+    </div>
+    <!---------- End Divider ---------->
+
+    <!---------- Being Timeline ---------->
+    <section class="bg-black">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-lg-4 d-lg-block d-none">
+            <img src="./assets/images/side.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8">
+            <div class="content-section">
+              <div
+                class="d-lg-flex d-block justify-content-between align-items-center mb-5"
+              >
+                <div>
+                  <h2 class="heading text-white">التسويق العقاري</h2>
+                  <p class="text_light">
+                    مع الإدارة الحكيمة نعمل على أن يصل عقارك إلى من يبحث عن
+                    الجودة.
+                  </p>
+                </div>
+                <a
+                  href="javascript: void (0)"
+                  class="btn btn-outline-custom mb-4"
+                  >سجل اهتماماتك</a
+                >
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3 class="timeline-heading">التخطيط للتسويق العقاري</h3>
+                  <p class="timeline-text">
+                    وضع إستراتيجيات تسويقية فعّالة لتسويق المشاريع العقارية
+                    تستهدف جذب المشترين والمستثمرين المحتملين من خلال تحليل
+                    السوق وتحديد الجمهور المستهدف بدقة.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <h3 class="timeline-heading">التسويق المتكامل</h3>
+                  <p class="timeline-text">
+                    تطوير وتنفيذ خطة تسويقية شاملة تجمع بين القنوات التقليدية
+                    والرقمية لتحقيق انتشار واسع وتعزيز وجود العلامة التجارية مما
+                    يسهم في جذب العملاء وزيادة التفاعل والمبيعات.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <h3 class="timeline-heading">التنظيم لافتتاح المشاريع</h3>
+                  <p class="timeline-text">
+                    تنظيم وتنسيق فعاليات إطلاق المشاريع العقارية مع التركيز على
+                    التجهيزات، الدعوات، والإعلانات لإنجاح الحدث. دعم المشروع
+                    برؤية استراتيجية لجذب المستثمرين والعملاء.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- End Timeline ---------->
+
+    <!---------- Being Divider ---------->
+    <div class="bg-black  py-2 d-lg-block d-none">
+      <div class="bg-section"></div>
+    </div>
+    <!---------- End Divider ---------->
+
+    <section class="section-spacing bg-black pt-0">
+      <div class="container-xl">
+        <div class="row justify-content-between">
+          <h2 class="heading text-white text-lg-center mb-lg-5">عن الشركة</h2>
+          <div class="col-lg-6">
+            <div class="content">
+              <p class="text text_light">كلمة الرئيس التنفيذي</p>
+              <p class="text">
+                الإدارة الفخمة ليست مجرد شركة عقارية بل هي امتداد لرؤية تطمح
+                لتقديم مفهوم جديد في عالم العقار الفاخر. رؤية تتماشى مع تطلعات
+                اقتصادنا الوطني نحو الريادة.
+              </p>
+              <p class="text">
+                نحن نسعى لبناء علاقات مبنية على الثقة والجودة مع عملائنا، من
+                خلال توفير حلول عقارية متكاملة ترتقي لتوقعات المستثمرين
+                والمشترين، وتضفي قيمة حقيقية على مشاريعنا ونؤمن بأهمية التميز
+                والابتكار في كل ما نقدمه لضمان جودة التنفيذ وفق أعلى المعايير.
+              </p>
+              <p class="text">
+                في الإدارة الفخمة، نجعل من التميز هدفًا، ونضع مصلحة العميل في
+                صدارة اهتماماتنا، لنكون رمزًا للثقة والجودة في القطاع العقاري
+                الحديث بالمملكة.
+              </p>
+              <a class="text" href="javascript: void(0)"
+                >اعرف أكثر عن الشركة
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-4">
+            <img src="./assets/images/image.png" class="w-100" alt="about" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Being Partner Logos ---------->
+
+    <section class="Our-Partner bg-white">
+      <div class="container-xl">
+        <h2 class="text-center text-black mb-3">شركاؤنا</h2>
+
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8">
+            <!-- Swiper -->
+            <div class="swiper OurPartner">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/logos/logo1.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/logos/logo2.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/logos/logo3.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/logos/logo4.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Being Partner Logos ---------->
+
+    <!---------- Being Contact ---------->
+
+    <section class="form-bg">
+      <div class="container-xl">
+        <div class="d-flex justify-content-center">
+          <div class="card-container">
+            <h3 class="form-heading">تواصل معنا</h3>
+            <form>
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الاسم "
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="البريد الالكتروني "
+                  />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="البريد الالكتروني "
+                  />
+                </div>
+                <div class="col-lg-12 mb-4">
+                  <textarea
+                    rows="10"
+                    class="resize-none form-control w-100"
+                    placeholder="رسالتك هنا "
+                  ></textarea>
+                </div>
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-header">ارسال</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- End Contact ---------->
+
+    <!---------- Being Footer ---------->
+    <footer>
+      <div class="container-xl">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <h3 class="list-heading fw-bold">روابط</h3>
+            <div class="row">
+              <div class="col-lg-4 col-6">
+                <div class="">
+                  <ul class="list-unstyled p-0 link-list">
+                    <li>
+                      <a href="home.html">صفحة الرئيسية</a>
+                    </li>
+                    <li>
+                      <a href="about.html">عن الشركة</a>
+                    </li>
+                    <li>
+                      <a href="Privacy-Policy.html">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                      <a href="Terms-and-Conditions.html">الشروط و الاحكام</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <ul class="list-unstyled p-0 link-list">
+                  <li>
+                    <a href="home.html">صفحة الرئيسية</a>
+                  </li>
+                  <li>
+                    <a href="about.html">عن الشركة</a>
+                  </li>
+                  <li>
+                    <a href="Privacy-Policy.html">سياسة الخصوصية</a>
+                  </li>
+                  <li>
+                    <a href="Terms-and-Conditions.html">الشروط و الاحكام</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div
+                  class="d-flex flex-lg-column flex-row-reverse justify-content-between h-100"
+                >
+                  <div class="w-lg-100 w-50  ps-lg-0 ps-3">
+                    <h4 class="list-heading mb-1">تابعنا على</h4>
+                    <div class="social-links">
+                      <a
+                        href="javascript: void (0)"
+                        class="text-decoration-none"
+                      >
+                        <img src="./assets/images/social-icons/x.svg" alt="x" />
+                      </a>
+                      <a
+                        href="javascript: void (0)"
+                        class="text-decoration-none"
+                      >
+                        <img
+                          src="./assets/images/social-icons/tik-tok.svg"
+                          alt="tik-tok"
+                        />
+                      </a>
+                      <a
+                        href="javascript: void (0)"
+                        class="text-decoration-none"
+                      >
+                        <img
+                          src="./assets/images/social-icons/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <address class="w-lg-100 w-50 mb-0">
+                    حي العارض، الرياض المملكة العربية السعودية
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-lg-block d-none">
+            <div
+              class="text-end d-flex flex-column justify-content-between h-100"
+            >
+              <span class="logo-text">luxury management</span>
+              <div class="contact-links">
+                <span>
+                  <a href="tel:+966 826 7839">7839 826 966+</a>
+                </span>
+                <span>
+                  <a href="mailto:info@Luxurymanagment.com"
+                    >info@Luxurymanagment.com</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!---------- End Footer ---------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".heroSwiper", {
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+      });
+      var OurPartner = new Swiper(".OurPartner", {
+          spaceBetween: 15,
+          slidesPerView: 4,
+          pagination: {
+              clickable: true,
+          },
+      });
+    </script>
+
+    <script src="data.js"></script>
+    <!-- <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiY2hyaXN3eGNoYW1wcyIsImEiOiJjbGk4ajBpY2wwMDd3M2ZwcTZ4dDljOGtoIn0.3T3mN_w71qqpzT3jKUf_wQ";
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [0, 0],
+        zoom: 2,
+      });
+
+      function renderProjectCards() {
+        const container = document.getElementById("project-cards-container");
+        container.innerHTML = "";
+        users.forEach((project) => {
+          const col = document.createElement("div");
+          col.className = "col-lg-4 mb-lg-0 mb-4";
+
+          col.innerHTML = `
+            <div class="project-card">
+              <div class="position-relative">
+                <img src="${project.image}" class="card-img-top" alt="project" />
+                <span class="badge green">${project.badge}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">${project.title}</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/location-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/location-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.location}</span>
+                  </div>
+
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/arrow-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/arrow-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.distance}</span>
+                  </div>
+
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/house-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/house-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.units} وحدة</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">${project.price}</p>
+                  <a href="#" class="project-btn">ملف المشروع</a>
+                </div>
+              </div>
+            </div>
+          `;
+
+          col.addEventListener("click", () => {
+            map.flyTo({
+              center: project.coordinates,
+              zoom: 12,
+              essential: true,
+            });
+          });
+
+          container.appendChild(col);
+        });
+      }
+
+      window.onload = () => {
+        renderProjectCards();
+        users.forEach((user) => {
+          new mapboxgl.Marker().setLngLat(user.coordinates).addTo(map);
+        });
+      };
+    </script> -->
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiY2hyaXN3eGNoYW1wcyIsImEiOiJjbGk4ajBpY2wwMDd3M2ZwcTZ4dDljOGtoIn0.3T3mN_w71qqpzT3jKUf_wQ";
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: 'mapbox://styles/mapbox/dark-v10',
+        center: [0, 0],
+        zoom: 2,
+      });
+
+      function renderProjectCards() {
+        const container = document.getElementById("project-cards-container");
+        container.innerHTML = ""; // Clear the container
+
+        users.forEach((project, index) => {
+          const col = document.createElement("div");
+          col.className = "col-lg-4 mb-lg-0 mb-4";
+
+          col.innerHTML = `
+            <div class="project-card">
+              <div class="position-relative">
+                <img src="${project.image}" class="card-img-top" alt="project" />
+                <span class="badge green">${project.badge}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">${project.title}</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/location-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/location-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.location}</span>
+                  </div>
+
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/arrow-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/arrow-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.distance}</span>
+                  </div>
+
+                  <div class="d-flex align-items-center option-list">
+                    <span>
+                      <img
+                        src="./assets/images/icons/house-white.svg"
+                        class="white-icon"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/images/icons/house-black.svg"
+                        class="black-icon"
+                        alt=""
+                      />
+                    </span>
+                    <span class="text">${project.units} وحدة</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">${project.price}</p>
+                  <a href="#" class="project-btn">ملف المشروع</a>
+                </div>
+              </div>
+            </div>
+          `;
+
+          col.addEventListener("click", () => {
+            map.flyTo({
+              center: project.coordinates,
+              zoom: 12,
+              essential: true,
+            });
+
+            // Change the marker color when the location is clicked
+            updateMarkerColor(index);
+          });
+
+          container.appendChild(col);
+        });
+      }
+
+      function updateMarkerColor(selectedIndex) {
+        // Select all marker divs
+        const allMarkers = document.querySelectorAll(".custom-marker");
+
+        // Reset the color of all markers
+        allMarkers.forEach((marker) => {
+          const svg = marker.querySelector('svg');
+          if (svg) {
+            svg.setAttribute('fill', '#9d9d9d'); // Default color
+          }
+        });
+
+        // Set the color of the selected marker
+        const selectedMarker = allMarkers[selectedIndex];
+        if (selectedMarker) {
+          const selectedSvg = selectedMarker.querySelector('svg');
+          if (selectedSvg) {
+            selectedSvg.setAttribute('fill', '#ffffff'); // Color when selected
+          }
+        }
+      }
+
+      window.onload = () => {
+        renderProjectCards();
+
+        users.forEach((user, index) => {
+          // Define the SVG content for the marker
+          const svgMarker = `
+            <svg fill="#9d9d9d" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="25px" height="25px" viewBox="0 0 395.71 395.71"
+            xml:space="preserve">
+              <g>
+                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+              </g>
+            </svg>
+          `;
+
+          const markerDiv = document.createElement("div");
+          markerDiv.innerHTML = svgMarker;
+          markerDiv.className = "custom-marker";
+          new mapboxgl.Marker(markerDiv)
+            .setLngLat(user.coordinates)
+            .addTo(map);
+        });
+      };
+    </script>
+  </body>
+</html>
